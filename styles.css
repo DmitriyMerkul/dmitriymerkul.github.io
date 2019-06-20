@@ -1,0 +1,273 @@
+
+
+/* My code below */
+
+
+
+/*body {*/
+   /* background-color: #f3f3f3;*/ /* light-grey background color */
+/*}*/
+a:active,    /* Remove href underlines */
+a:hover,
+a{
+    text-decoration: none;
+}
+
+header {
+  background-color: #fff; /* white color */
+  width: 100%;
+  height: 100px;
+  /*padding: 20px;*/
+}
+
+header .header-brand {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900; /* from 1 to 1000 or bold, lighter, etc. */
+  color: #111; /* a little lighter, than black */
+  text-transform: uppercase; /* to capitalize all letters */
+  display: block;
+  margin: 0 auto; /* 0 top-bottom and centered left-right */
+  text-align: center; /* to center the text inside the block */
+  padding: 20px 0 20px 40px; /* 20px top, 0px right, 20px bottom 40 left*/
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto; /*to center right-left all the blocks inside */
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block; /* to dosplay items as blocks in one line */
+  float: left; /* to remove slight gap between the links */
+  list-style: none; /* to remove default list styling "bullets" */
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: Catamaran;
+  font-size: 16px;
+  /*font-weight: 800;*/
+  color: #111;
+  line-height: 24px;
+  text-align: center;
+}
+header nav ul a:hover { /* changes on hover */
+  color: red;
+  font-size: 22px;
+}
+header .header-projects {
+  display: none;
+}
+
+/* changes for bigger screens like tablets, laptops */
+@media only screen and (min-width: 1024px){
+header .header-brand {
+  margin: 30px 0; 
+  text-align: left;
+  padding: 0 20px 0px 20px; /* 20px top, 0px right, 20px bottom 40 left*/
+  border-right: 3px solid #111;
+  line-height: 40px;
+  float: left;
+}
+header nav ul {
+  margin: 20px 0;
+  float: left;
+}
+
+header nav ul li a {
+  line-height: 60px;
+  text-align: center;
+}
+header nav ul li a:hover { /* changes on hover */
+  color: red;
+  font-size: 22px;
+}
+header .header-projects {
+  display: block;
+  font-family: Catamaran;
+  font-size: 16px;
+  /*font-weight: 800;*/
+  color: #111;
+  line-height: 40px;
+  border: 1px solid #111;
+  float: right;
+  margin-right: 40px;
+  margin-top: 28px;
+  padding: 0px 20px;
+}
+header .header-projects:hover {
+  color: green;
+  font-size: 22px;
+}
+.footer-links-main {
+  display: block;
+  color: white;
+}
+}
+
+
+.index-banner {
+  width: 100%;
+  /* height: 100vh; */ /* vh = View Height, means 100% of the device height */
+  height: calc(100vh - 100px); /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
+  background-image: url('img/photo5.jpg'); /* setting the background img */
+  background-repeat: no-repeat; /* not to be repeated inside it's block */
+  background-position: center; /* centered within it's block */
+  background-size: cover; /* covers all the container space no matter height and with, not shrinkable */
+  display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+  text-transform: uppercase; /* all the symbols are uppercase */
+  color: white;
+  font-size: 60px;
+  line-height: 70px; /* the height of each line containing text */
+  font-weight: 900;
+  font-family: Catamaran;
+  text-shadow: 2px 2px 8px #111; /* 2 px*2px shadow size, 8 px blur & color #111 - grey */
+  text-align: center;
+  /*padding: 20px 0 300px 88px;*/
+}
+
+.index-banner h1 {
+  /* text-transform: capitalize; */ /* capitalize all the words */
+  color: yellow;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: Cormorant Garamond;
+  text-shadow: 3px 3px 8px #111; /* 3px*3px shadow size, 8 px blur & color #111 - grey */
+  text-align: center;
+  font-style: italic;
+  line-height: 60px;
+}
+
+.index-links div {
+  margin: 16px 16px 0; /* 16 top, 16 - right/left, 0 bottom */
+  width: calc(100% - 32px); /* 32 px = 16 px margin left + 16 px margin right */
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+  /* text-transform: capitalize; */ /* capitalize all the words */
+  color: #111;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: Catamaran;
+  text-shadow: 2px 2px 8px #111; /* 2 px*2px shadow size, 8 px blur & color #111 - grey */
+  text-align: center;
+  font-style: italic;
+  line-height: 100px;
+  text-transform: uppercase;
+
+}
+.index-links div h3:hover{
+  font-size: 32px;
+  font-weight: 800;
+}
+@media only screen and (min-width: 1024px){
+  .wrapper {
+    width: 1000px;
+    margin: 0 0 0 300px;
+  }
+.index-banner {
+  height: 450px; /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
+
+}
+
+.index-links div {
+  margin: 10px 10px 10px 10px;
+  width: calc(100% - 20px); /* 32 px = 16 px margin left + 16 px margin right */
+  height: 100px;
+  background-color: #f2f2f2;
+  float: left;
+}
+
+.index-boxlink-square{
+  width: calc(25% - 50px) !important; /* to override the previous styling */
+}
+
+.index-boxlink-rectangle{
+  width: calc(50% - 50px) !important; 
+}
+.index-links div h3 {
+  line-height: 100px;
+}
+  
+}
+
+
+
+/* FOOTER */
+footer {
+  /*width: calc(100% - 80px);*/
+  width: 100%;
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #0d0d0d;
+  overflow: hidden;
+}
+
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block; /* to dosplay items as blocks in one line */
+  list-style: none; /* to remove default list styling "bullets" */
+  font-family: Cormorant Garamond;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+  color: yellow;
+}
+
+footer ul li a {
+  font-family: Catamaran;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.footer-links-main {
+  display: none;
+}
+
+.footer-sm {
+  width: 60px;
+  float: right;
+}
+
+.footer-sm img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px){
+.footer-links-main {
+  display: block;
+  margin-right: 150px;
+}
+
+
+
+footer ul li p {
+  font-family: Catamaran;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+}

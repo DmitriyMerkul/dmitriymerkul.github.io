@@ -356,7 +356,7 @@ header .header-projects:hover {
 footer {
   /*width: calc(100% - 80px);*/
   width: 100%;
-  padding: 40px 40px;
+  padding: 40px 20px;
   margin-top: 20px;
   background-color: #0d0d0d;
   overflow: hidden;

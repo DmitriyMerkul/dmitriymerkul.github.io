@@ -65,7 +65,7 @@ header .header-projects {
 }
 
 /* changes for bigger screens like tablets, laptops */
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1280px){
 header .header-brand {
   margin: 30px 0; 
   text-align: left;
@@ -156,7 +156,8 @@ header .header-projects:hover {
 }
 
 .index-links {
-  padding: 20px 0 0px 100px;
+  display: block;
+  /*float: right;*/
 }
 
 .index-links div {
@@ -185,9 +186,9 @@ header .header-projects:hover {
   
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1280px){
   .wrapper {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
     /*margin: 0 0 0 300px;*/
   }
@@ -197,7 +198,7 @@ header .header-projects:hover {
   }
   
   .wrapper3 {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
   }
 
@@ -215,11 +216,12 @@ header .header-projects:hover {
   }
 
   .index-boxlink-square {
-    width: calc(25% - 50px) !important; /* to override the previous styling */
+    width: calc(33% - 25px) !important; /* to override the previous styling */
   }
 
   .index-boxlink-rectangle {
-    width: calc(50% - 50px) !important; 
+    /*width: calc(67% - 50px) !important; */
+    width: calc(67% - 25px) !important;
   }
 
   .index-links div h3 {
@@ -401,7 +403,7 @@ footer ul li a {
   margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1280px){
 .footer-links-main {
   display: block;
   margin-right: 150px;

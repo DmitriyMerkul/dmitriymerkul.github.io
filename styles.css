@@ -9,11 +9,20 @@
 /*}*/
 a:active,    /* Remove href underlines */
 a:hover,
-a{
+a {
     text-decoration: none;
+  
+}
+
+main {
+  padding-top: 100px; /* setting main section padding according to the height of a header to it should not be under the fixed positioned header */
 }
 
 header {
+  position: fixed; /* stays on the screen while being scrolled down */
+  top: 0; /* fixed on the top-left-right of the window */
+  right: 0;
+  left: 0;
   background-color: #fff; /* white color */
   width: 100%;
   height: 100px;
@@ -84,6 +93,7 @@ header nav ul li a:hover { /* changes on hover */
   color: red;
   font-size: 22px;
 }
+
 header .header-projects {
   display: block;
   font-family: Catamaran;
@@ -97,14 +107,17 @@ header .header-projects {
   margin-top: 28px;
   padding: 0px 20px;
 }
+
 header .header-projects:hover {
   color: green;
   font-size: 22px;
 }
+
 .footer-links-main {
   display: block;
   color: white;
 }
+
 }
 
 
@@ -168,43 +181,177 @@ header .header-projects:hover {
   text-transform: uppercase;
 
 }
-.index-links div h3:hover{
+.index-links div h3:hover {
   font-size: 32px;
   font-weight: 800;
+  
 }
+
 @media only screen and (min-width: 1024px){
   .wrapper {
     width: 1000px;
     margin: 0 0 0 300px;
   }
-.index-banner {
-  height: 450px; /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
+  .wrapper2 {
+    width: 520px;
+    margin: 0 auto;
+  }
+  
+  .wrapper3 {
+    width: 1000px;
+    margin: 0 auto;
+  }
 
-}
+  .index-banner {
+    height: 450px; /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
 
-.index-links div {
-  margin: 10px 10px 10px 10px;
-  width: calc(100% - 20px); /* 32 px = 16 px margin left + 16 px margin right */
-  height: 100px;
-  background-color: #f2f2f2;
-  float: left;
-}
+  }
 
-.index-boxlink-square{
-  width: calc(25% - 50px) !important; /* to override the previous styling */
-}
+  .index-links div {
+    margin: 10px 10px 10px 10px;
+    width: calc(100% - 20px); /* 32 px = 16 px margin left + 16 px margin right */
+    height: 100px;
+    background-color: #f2f2f2;
+    float: left;
+  }
 
-.index-boxlink-rectangle{
-  width: calc(50% - 50px) !important; 
-}
-.index-links div h3 {
-  line-height: 100px;
-}
+  .index-boxlink-square {
+    width: calc(25% - 50px) !important; /* to override the previous styling */
+  }
+
+  .index-boxlink-rectangle {
+    width: calc(50% - 50px) !important; 
+  }
+
+  .index-links div h3 {
+    line-height: 100px;
+  }
   
 }
 
+/* Projects */
 
+.index-banner2 {
+  width: 100%;
+  /* height: 100vh; */ /* vh = View Height, means 100% of the device height */
+  height: calc(100vh - 100px); /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
+  background-image: url('img/photo2.jpg'); /* setting the background img */
+  background-repeat: no-repeat; /* not to be repeated inside it's block */
+  background-position: center; /* centered within it's block */
+  background-size: cover; /* covers all the container space no matter height and with, not shrinkable */
+  display: table;
+}
 
+.projects-links {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.projects-links h2 {
+  text-transform: uppercase; /* all the symbols are uppercase */
+  color: white;
+  font-size: 60px;
+  line-height: 70px; /* the height of each line containing text */
+  font-weight: 900;
+  font-family: Catamaran;
+  text-shadow: 2px 2px 8px #111; /* 2 px*2px shadow size, 8 px blur & color #111 - grey */
+  text-align: center;
+}
+
+.projects-links .projects-link {
+  width: 240px;
+  height: 245px;
+  margin: 20px 10px 0px;
+  background-color: #e3e3e3;
+  float: left;
+}
+
+.projects-links .projects-link p {
+  padding-top: 45%;
+  color: #111;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: Catamaran;
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* About me */
+.about-banner3 {
+  width: 100%;
+  /* height: 100vh; */ /* vh = View Height, means 100% of the device height */
+  height: calc(100vh - 100px); /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
+  background-image: url('img/photo3.jpg'); /* setting the background img */
+  background-repeat: no-repeat; /* not to be repeated inside it's block */
+  background-position: center; /* centered within it's block */
+  background-size: cover; /* covers all the container space no matter height and with, not shrinkable */
+  display: table;
+}
+.about-links h2 {
+  text-transform: uppercase; /* all the symbols are uppercase */
+  color: white;
+  font-size: 80px;
+  line-height: 86px; /* the height of each line containing text */
+  font-weight: 900;
+  font-family: Catamaran;
+  text-shadow: 2px 2px 8px #111; /* 2 px*2px shadow size, 8 px blur & color #111 - grey */
+  text-align: center;
+}
+.about-links h1 {
+  /* text-transform: capitalize; */ /* capitalize all the words */
+  color: yellow;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: Cormorant Garamond;
+  text-shadow: 3px 3px 8px #111; /* 3px*3px shadow size, 8 px blur & color #111 - grey */
+  text-align: center;
+  font-style: italic;
+  line-height: 60px;
+}
+.knowledge p {
+  color: #111;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Catamaran;
+  text-shadow: 1px 1px 1px #111; /* 3px*3px shadow size, 8 px blur & color #111 - grey */
+  text-align: center;
+  line-height: 40px;
+  /* column-count: 2; */                /* divide the text into columns */
+  /* column-gap: 20px; */               /* distance between columns */
+  }
+
+  /*to center the video */
+  
+  .wrapper3 video {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .wrapper3 article h3 {
+  color: #111;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: Catamaran;
+  text-shadow: 2px 2px 8px #111; /* 2 px*2px shadow size, 8 px blur & color #111 - grey */
+  text-align: center;
+  font-style: italic;
+  line-height: 100px;
+  text-transform: uppercase;
+  }
+  
+  /* PORTFOLIO */
+  .portfolio-banner {
+  width: 100%;
+  /* height: 100vh; */ /* vh = View Height, means 100% of the device height */
+  height: calc(100vh - 100px); /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
+  background-image: url('img/construct.png'); /* setting the background img */
+  background-repeat: no-repeat; /* not to be repeated inside it's block */
+  background-position: center; /* centered within it's block */
+  background-size: cover; /* covers all the container space no matter height and with, not shrinkable */
+  display: table;
+}
+  
 /* FOOTER */
 footer {
   /*width: calc(100% - 80px);*/

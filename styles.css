@@ -1,9 +1,3 @@
-
-
-/* My code below */
-
-
-
 /*body {*/
    /* background-color: #f3f3f3;*/ /* light-grey background color */
 /*}*/
@@ -149,9 +143,9 @@ header .header-projects:hover {
   /*padding: 20px 0 300px 88px;*/
 }
 
-.index-banner h1 {
-  /* text-transform: capitalize; */ /* capitalize all the words */
-  color: yellow;
+.index-h1 div {
+  text-transform: capitalize; /* capitalize all the words */
+  color: #111;
   font-size: 50px;
   font-weight: 600;
   font-family: Cormorant Garamond;
@@ -159,6 +153,10 @@ header .header-projects:hover {
   text-align: center;
   font-style: italic;
   line-height: 60px;
+}
+
+.index-links {
+  padding: 20px 0 0px 100px;
 }
 
 .index-links div {
@@ -190,7 +188,8 @@ header .header-projects:hover {
 @media only screen and (min-width: 1024px){
   .wrapper {
     width: 1000px;
-    margin: 0 0 0 300px;
+    margin: 0 auto;
+    /*margin: 0 0 0 300px;*/
   }
   .wrapper2 {
     width: 520px;

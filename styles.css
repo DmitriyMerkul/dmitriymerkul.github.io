@@ -260,7 +260,7 @@ header .header-projects:hover {
 }
 
 .projects-links .projects-link {
-  width: 240px;
+  width: calc(50% - 20px);
   height: 245px;
   margin: 20px 10px 0px;
   background-color: #e3e3e3;

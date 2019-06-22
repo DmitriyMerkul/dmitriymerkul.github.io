@@ -358,7 +358,7 @@ header .header-projects:hover {
 .contact-banner {
   width: 100%;
   /* height: 100vh; */ /* vh = View Height, means 100% of the device height */
-  height: calc(100vh - 100px); /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
+  height: calc(50vh - 100px); /*this stands for 100 View Height minus 100 pixes - the height of the banner block we set above this section */
   background-image: url('img/photo1.jpg'); /* setting the background img */
   background-repeat: no-repeat; /* not to be repeated inside it's block */
   background-position: center; /* centered within it's block */
